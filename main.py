@@ -6,9 +6,12 @@ class HelloWorld(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path = './chromedriver')
+        driver = self.driver
+        driver.implicitly_wait(10)
 
     def test_hello_world(self):
-        pass
+        driver = self.driver
+        driver.get('https://www.platzi.com')
 
     def tearDown(self):
         self.driver.quit()
