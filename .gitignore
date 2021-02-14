@@ -1,3 +1,6 @@
-./venv
+./venv/bin
+./venv/lib
+./venv/lib64
+./venv/share
 ./chromedriver
 ./reports
