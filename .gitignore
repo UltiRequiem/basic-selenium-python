@@ -4,3 +4,8 @@ chromedriver
 /venv/*
 /venv
 \venv\*
+
+# https://stackoverflow.com/questions/6030530/git-ignore-not-working-in-a-directory
+# git rm -r --cached .
+# git add .
+# git commit -m "Gitignore issue fixed"
