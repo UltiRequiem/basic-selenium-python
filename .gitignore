@@ -1,3 +1,2 @@
 venv
-./chromedriver
-./reports
+chromedriver
