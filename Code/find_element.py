@@ -1,10 +1,11 @@
 import unittest
 from selenium import webdriver
 
+
 class HomePageTest(unittest.TestCase):
-   
+
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path = './chromedriver')
+        self.driver = webdriver.Chrome(executable_path='./chromedriver')
         driver = self.driver
         driver.get("http://demo-store.seleniumacademy.com")
         driver.maximize_window()
@@ -28,10 +29,14 @@ class HomePageTest(unittest.TestCase):
         self.assertEqual(3, len(banners))
 
     def test_vip_promo(self):
-    vip_promo = self.driver.find_element_by_xpath('//*[@id="top"]/body/div/div[2]/div[2]/div/div/div[2]/div[1]/ul/li[4]/a/img')   
+        vip_promo = self.driver.find_element_by_xpath('//*[@id="top"]/body/div/div[2]/div[2]/div/div/div[2]/div/ul/li[4]/a/img')
+
+    def test_shopping_cart(self):
+        shopping_cart_icon = self.driver.find_element_by_css_selector("div.header-minicart span.icon")
 
     def tearDown(self):
         self.driver.quit()
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

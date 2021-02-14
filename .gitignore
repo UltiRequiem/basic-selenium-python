@@ -4,6 +4,9 @@ chromedriver
 /venv/*
 /venv
 \venv\*
+.idea
+/.idea
+
 
 # https://stackoverflow.com/questions/6030530/git-ignore-not-working-in-a-directory
 # git rm -r --cached .
