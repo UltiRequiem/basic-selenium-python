@@ -1,1 +1,3 @@
-# Basic-Selenium-whit-Python
+# Basic Selenium whit Python
+
+https://platzi.com
