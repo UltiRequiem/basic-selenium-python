@@ -1,4 +1,3 @@
-# Basic Selenium whit Python
+# Curso Basico de Selenium con Python
 
-[Platzi](https://platzi.com)
-[el curso](https://platzi.com/clases/intro-selenium)
+Este es un curso de [Platzi](https://platzi.com/r/EliazBobadilla).
