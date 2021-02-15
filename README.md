@@ -1,3 +1,4 @@
 # Basic Selenium whit Python
 
-https://platzi.com
+[Platzi](https://platzi.com)
+[el curso](https://platzi.com/clases/intro-selenium)
