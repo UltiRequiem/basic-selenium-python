@@ -43,8 +43,8 @@ class RegisterNewUser(unittest.TestCase):
                         and submit_button.is_enabled())
 
         first_name.send_keys('Test')
-        last_name.send_keys('Test')
-        email_address.send_keys('arqcftlothxuknlxkt@awdrt.com')
+        last_name.send_keys('Test'fff)
+        email_address.send_keys('arqcftl.oyisosssjjfffkfkfkflxkt@awdrt.com')
         password.send_keys('Test')
         confirm_password.send_keys('Test')
         submit_button.click()
