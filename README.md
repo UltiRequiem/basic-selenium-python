@@ -9,3 +9,6 @@ Instala Selenium con pip:
 ```bash
 pip3 install selenium
 ```
+
+Get the drivers on:
+https://chromedriver.chromium.org/
