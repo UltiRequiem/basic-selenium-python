@@ -9,9 +9,7 @@ search_tests = TestLoader().loadTestsFromTestCase(SearchTests)
 smoke_test = TestSuite([assertions_test, search_tests])
 
 
-kwargs = {
-    "output": 'smoke-report'
-}
+kwargs = {"output": "smoke-report"}
 
 
 runner = HTMLTestRunner(**kwargs)

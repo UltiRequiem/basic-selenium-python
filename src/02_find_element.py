@@ -3,9 +3,8 @@ from selenium import webdriver
 
 
 class HomePageTest(unittest.TestCase):
-
     def setUp(self):
-        driver = webdriver.Chrome(executable_path='./chromedriver')
+        driver = webdriver.Chrome(executable_path="./chromedriver")
         self.driver.get("http://demo-store.seleniumacademy.com")
         self.driver.maximize_window()
         self.driver.implicitly_wait(15)
@@ -24,19 +23,22 @@ class HomePageTest(unittest.TestCase):
 
     def test_count_of_promo_banner_images(self):
         banner_list = self.driver.find_element_by_class_name("promos")
-        banners = banner_list.find_element_by_tag_name('img')
+        banners = banner_list.find_element_by_tag_name("img")
         self.assertEqual(3, len(banners))
 
     def test_vip_promo(self):
         vip_promo = self.driver.find_element_by_xpath(
-            '//*[@id="top"]/body/div/div[2]/div[2]/div/div/div[2]/div/ul/li[4]/a/img')
+            '//*[@id="top"]/body/div/div[2]/div[2]/div/div/div[2]/div/ul/li[4]/a/img'
+        )
 
     def test_shopping_cart(self):
-        shopping_cart_icon = self.driver.find_element_by_css_selector("div.header-minicart span.icon")
+        shopping_cart_icon = self.driver.find_element_by_css_selector(
+            "div.header-minicart span.icon"
+        )
 
     def tearDown(self):
         self.driver.quit()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main(verbosity=2)
